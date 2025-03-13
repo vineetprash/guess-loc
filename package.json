@@ -4,7 +4,7 @@
   "description": "A JavaScript project",
   "scripts": {
     "start": "npx parcel serve ./src/index.html --port 8080",
-    "build": "npx parcel build ./src/index.html --dist-dir ./dist/",
+    "build": "npx parcel build ./src/index.html --dist-dir ./",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
   "repository": {
