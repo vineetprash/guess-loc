@@ -1,7 +1,7 @@
 "use strict";
 
-import { ImageInferenceHandler } from "./inference";
-import { StatusDisplay } from "./status";
+import { ImageInferenceHandler } from "./inference.js";
+import { StatusDisplay } from "./status.ts";
 
 function initMap() {
   var map = L.map("output-map").setView([51.505, -0.09], 9);

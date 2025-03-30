@@ -735,7 +735,7 @@ class ImageInferenceHandler {
     }
     async startSession() {
         this.statusDisplay.log("Setting up model...");
-        if (this.session === null) this.session = await ort.InferenceSession.create("https://pub-019cfa8857ec42a6a0135120aa585246.r2.dev/exports/s2cell_ml_tvit_release0.onnx", {
+        if (this.session === null) this.session = await ort.InferenceSession.create("s2cell_ml_tvit_release0.onnx", {
             executionProviders: [
                 "webgl",
                 "wasm"
