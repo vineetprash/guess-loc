@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A JavaScript project",
   "scripts": {
-    "start": "npx parcel serve ./src/index.html --port 8080",
+    "dev": "npx parcel serve ./src/index.html --port 8080",
     "build": "npx parcel build ./src/index.html --dist-dir ./",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix"
   },
@@ -21,5 +21,7 @@
     "parcel": "^2.12.0",
     "typescript": "^5.4.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "onnxruntime-web": "^1.21.0"
+  }
 }

@@ -75,8 +75,8 @@ export class ImageInferenceHandler {
 
     if (this.session === null) {
       this.session = await ort.InferenceSession.create(
-        "./s2cell_ml_tvit_release0.onnx",
-        { executionProviders: ["wasm"], graphOptimizationLevel: "all" }
+        "https://pub-019cfa8857ec42a6a0135120aa585246.r2.dev/exports/s2cell_ml_tvit_release0.onnx",
+        { executionProviders: ["webgl", "wasm"], graphOptimizationLevel: "all" }
       );
     }
 
